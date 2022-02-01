@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Styles/doc.css">
+    <link rel="stylesheet" href="./alert.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <title>Alert | Plume UI</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Plume UI</h1>
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside>
+        <nav>
+            <a href="../Usage/usage.html">Getting Started</a>
+            <a href="../Avatar/avatar.html">Avatar</a>
+            <a href="#" class="active">Alert</a>
+            <a href="../Badge/badge.html">Badge</a>
+            <a href="../Button/button.html">Button</a>
+            <a href="../Card/card.html">Card</a>
+            <a href="../Image/image.html">Image</a>
+            <a href="../Input/input.html">Input</a>
+            <a href="../List/list.html">List</a>
+            <a href="../Nav/nav.html">Navigation</a>
+            <a href="../Toast/toast.html">Toast</a>
+        </nav>
+    </aside>
+
+    <!-- Content -->
+    <main>
+        <div class="content">
+            <h2 class="content-title">Alert</h2>
+            <p class="content-brief">
+                An Alert displays a short, important message in a way that attracts the user's attention without interrupting the user's task.
+            </p>
+            <hr>
+            <div class="content-usage">
+                <h3>Simple Alerts</h3>
+                <p>Simple Alerts can be created using alert class, followed by the variant name.</p>
+                <div class="">
+                    <div class="alert alert-error">
+                        <span class="material-icons-outlined">
+                            error_outline
+                        </span>
+                        <span>This is an Error Alert - check it out!</span>
+                    </div>
+                    <div class="alert alert-warning">
+                        <span class="material-icons-outlined">
+                            report_problem
+                        </span>
+                        <span>This is a warning Alert - check it out!</span>
+                    </div>
+                    <div class="alert alert-info">
+                        <span class="material-icons-outlined">
+                            info
+                        </span>
+                        <span>This is an info Alert - check it out!</span>
+                    </div>
+                    <div class="alert alert-success">
+                        <span class="material-icons-outlined">
+                            task_alt
+                        </span>
+                        <span>This is a Success Alert - check it out!</span>
+                    </div>
+                </div>
+                <div class="code-display">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-dark&wt=none&l=auto&width=680&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-error%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2509%2509error_outline%250A%2509%253C%252Fspan%253E%250A%2509%253Cspan%253EThis%2520is%2520an%2520Error%2520Alert%2520-%2520check%2520it%2520out%21%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2509%2509%2520report_problem%250A%2509%253C%252Fspan%253E%250A%2509%253Cspan%253EThis%2520is%2520a%2520warning%2520Alert%2520-%2520check%2520it%2520out%21%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-info%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2509%2509info%250A%2509%253C%252Fspan%253E%250A%2509%253Cspan%253EThis%2520is%2520an%2520info%2520Alert%2520-%2520check%2520it%2520out%21%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2509%2509task_alt%250A%2509%253C%252Fspan%253E%250A%2509%253Cspan%253EThis%2520is%2520a%2520Success%2520Alert%2520-%2520check%2520it%2520out%21%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                        style="width: 100%; height: 518px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+            <hr>
+            <div class="content-feature">
+                <h3>Outline Alert</h3>
+                <div class="content-feature-display">
+                    <p>Outline alerts are created by using alert class, followed by outline-variant. 
+                    </p>
+                </div>
+            </div>
+            <div class="">
+                <div class="alert alert-error-outline">
+                    <span class="material-icons-outlined">
+                        error_outline
+                    </span>
+                    <span>This is an Error Alert - check it out!</span>
+                </div>
+                <div class="alert alert-warning-outline">
+                    <span class="material-icons-outlined">
+                        report_problem
+                    </span>
+                    <span>This is a warning Alert - check it out!</span>
+                </div>
+                <div class="alert alert-info-outline">
+                    <span class="material-icons-outlined">
+                        info
+                    </span>
+                    <span>This is an info Alert - check it out!</span>
+                </div>
+                <div class="alert alert-success-outline">
+                    <span class="material-icons-outlined">
+                        task_alt
+                    </span>
+                    <span>This is a Success Alert - check it out!</span>
+                </div>
+            </div>
+            <div class="code-display">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-dark&wt=none&l=auto&width=680&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-error-outline%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2509%2509error_outline%250A%2509%253C%252Fspan%253E%250A%2509%253Cspan%253EThis%2520is%2520an%2520Error%2520Alert%2520-%2520check%2520it%2520out%21%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning-outline%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2509%2509%2520report_problem%250A%2509%253C%252Fspan%253E%250A%2509%253Cspan%253EThis%2520is%2520a%2520warning%2520Alert%2520-%2520check%2520it%2520out%21%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-info-outline%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2509%2509info%250A%2509%253C%252Fspan%253E%250A%2509%253Cspan%253EThis%2520is%2520an%2520info%2520Alert%2520-%2520check%2520it%2520out%21%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-success-outline%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2509%2509task_alt%250A%2509%253C%252Fspan%253E%250A%2509%253Cspan%253EThis%2520is%2520a%2520Success%2520Alert%2520-%2520check%2520it%2520out%21%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                    style="width: 100%; height: 518px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <hr>
+            <footer>
+                <a href="../Avatar/avatar.html" class="prev">
+                    <span class="material-icons-outlined">navigate_before</span>Avatar
+                </a>
+                <a href="../Badge/badge.html" class="next">Badge<span
+                        class="material-icons-outlined">navigate_next</span></a>
+            </footer>
+        </div>
+    </main>
+</body>
+</html>
