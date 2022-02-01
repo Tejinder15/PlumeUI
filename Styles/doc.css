@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --para-link-color: #6c757d;
+  --scroll-color: #ced4da;
+  --link-hover-color: #cfbaf0;
+}
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -13,12 +19,16 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-weight: 700;
+}
+
 h3 {
   font-size: 1.4rem;
 }
 
 p {
-  color: #6c757d;
+  color: var(--para-link-color);
   font-size: 18px;
 }
 
@@ -65,7 +75,7 @@ aside::-webkit-scrollbar {
 }
 
 aside::-webkit-scrollbar-thumb {
-  background-color: #ced4da;
+  background-color: var(--scroll-color);
   border-radius: 10px;
 }
 
@@ -85,7 +95,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #cfbaf0;
+  background-color: var(--link-hover-color);
   color: white;
 }
 
