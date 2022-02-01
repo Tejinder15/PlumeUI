@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --para-link-color: #6c757d;
+  --scroll-color: #ced4da;
+  --link-hover-color: #cfbaf0;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+p {
+  color: var(--para-link-color);
+  font-size: 18px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+/* Header */
+header {
+  height: 62px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.hamburger > div {
+  width: 25px;
+  height: 2px;
+  background-color: #000;
+  margin: 5px;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* Sidebar */
+aside {
+  height: 100vh;
+  width: 300px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  overflow-y: auto;
+}
+
+aside::-webkit-scrollbar {
+  width: 4px;
+}
+
+aside::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-color);
+  border-radius: 10px;
+}
+
+nav {
+  height: 90%;
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+nav a {
+  border-radius: 3px;
+  padding: 0.7rem 0.4rem;
+  color: #585a5c;
+}
+
+nav a:hover {
+  background-color: var(--link-hover-color);
+  color: white;
+}
+
+/* Content */
+main {
+  margin-left: 300px;
+}
+
+.content {
+  max-width: 800px;
+  padding-left: 0.2rem;
+}
+
+.content-title {
+  font-size: 2rem;
+}
+
+.code-display {
+  padding: 1.4rem 0;
+}
+
+.demo {
+  display: flex;
+}
+
+.demo > div + div {
+  margin-left: 15px;
+}
+
+/* Footer */
+footer {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-weight: 500;
+}
+
+/* Media query */
+@media screen and (max-width: 786px) {
+  aside {
+    display: none;
+  }
+
+  main {
+    margin-left: 0;
+  }
+
+  .content {
+    width: 95%;
+    margin: 0 auto;
+  }
+}

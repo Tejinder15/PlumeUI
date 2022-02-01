@@ -1,0 +1,43 @@
+@import url("../Avatar/avatar.css");
+
+.badge {
+  position: relative;
+}
+
+.status {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: absolute;
+  bottom: 8%;
+  right: 8%;
+}
+
+.online {
+  background-color: #70e000;
+}
+
+.offline {
+  background-color: #555b6e;
+}
+
+.busy {
+  background-color: #ef233c;
+}
+
+/*  Icons */
+.material-icons-outlined.md-54 {
+  font-size: 54px;
+}
+
+.dot {
+  background-color: #00b4d8;
+  top: 0;
+  right: 0;
+  font-size: 12px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
