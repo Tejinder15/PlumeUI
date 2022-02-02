@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Styles/doc.css">
+    <link rel="stylesheet" href="./button.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <title>Button | Plume UI</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Plume UI</h1>
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside>
+        <nav>
+            <a href="../Usage/usage.html">Getting Started</a>
+            <a href="../Avatar/avatar.html">Avatar</a>
+            <a href="../Alert/alert.html">Alert</a>
+            <a href="../Badge/badge.html">Badge</a>
+            <a href="#" class="active">Button</a>
+            <a href="../Card/card.html">Card</a>
+            <a href="../Image/image.html">Image</a>
+            <a href="../Input/input.html">Input</a>
+            <a href="../List/list.html">List</a>
+            <a href="../Nav/nav.html">Navigation</a>
+            <a href="../Toast/toast.html">Toast</a>
+        </nav>
+    </aside>
+
+    <!-- Content -->
+    <main>
+        <div class="content">
+            <h2 class="content-title">Button</h2>
+            <p class="content-brief">
+                Buttons allow users to take actions, and make choices, with a single tap.
+            </p>
+            <hr>
+            <div class="content-usage">
+                <h3>Primary Buttons</h3>
+                <p>Buttons that are used to perform primary actions, or things that we want the user to do as often as possible.</p>
+                <div class="">
+                    <button class="btn btn-default">Default</button>
+                    <button class="btn btn-primary">Primary</button>
+                    <button class="btn btn-error">Error</button>
+                    <button class="btn btn-success">Success</button>
+                </div>
+                <div class="code-display">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-dark&wt=none&l=auto&width=680&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-default%2522%253EDefault%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-error%2522%253EError%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-success%2522%253ESuccess%253C%252Fbutton%253E"
+                        style="width: 100%; height: 146px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+            <hr>
+            <div class="content-feature">
+                <h3>Link Button</h3>
+                <div class="content-feature-display">
+                    <p>To show anchor tag as a button.</p>
+                </div>
+            </div>
+            <div class="">
+                <a href="https://www.google.com/" target="_blank" class="btn btn-primary btn-link">Click to visit</a>
+            </div>
+            <div class="code-display">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-dark&wt=none&l=auto&width=680&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520href%253D%2522Enter%2520Url%2522%2520target%253D%2522_blank%2522%2520%250Aclass%253D%2522btn%2520btn-primary%2520btn-link%2522%253EClick%2520to%2520visit%253C%252Fa%253E"
+                    style="width: 100%; height: 111px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <hr>
+            <div class="content-feature">
+                <h3>Icon Button</h3>
+                <div class="content-feature-display">
+                    <p>Sometimes you might want to have icons for certain button to enhance the UX of the application as we recognize logos more easily than plain text.</p>
+                </div>
+            </div>
+            <div>
+                <button class="btn btn-primary btn-icon">
+                    <span class="material-icons-outlined">share</span>
+                    Share
+                </button>
+                <button class="btn btn-error btn-icon">
+                    <span class="material-icons-outlined">delete</span>Delete</button>
+                <button class="btn btn-success btn-icon"><span class="material-icons-outlined">upload</span>Upload</button>
+            </div>
+            <div class="code-display">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-dark&wt=none&l=auto&width=680&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-icon%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253Eshare%253C%252Fspan%253EShare%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-error%2520btn-icon%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253Edelete%253C%252Fspan%253EDelete%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-success%2520btn-icon%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253Eupload%253C%252Fspan%253EUpload%250A%253C%252Fbutton%253E"
+                    style="width: 100%; height: 238px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <hr>
+            <div class="content-feature">
+                <h3>Floating Action Button</h3>
+                <div class="content-feature-display">
+                    <p>Icons are also appropriate for toggle buttons that allow a single choice to be selected or deselected.</p>
+                </div>
+            </div>
+            <div class="">
+                <button class="btn btn-primary btn-icon btn-float">
+                    <span class="material-icons-outlined">add</span>
+                </button>
+                <button class="btn btn-success btn-icon btn-float">
+                    <span class="material-icons-outlined">edit</span>
+                </button>
+                <button class="btn btn-error btn-icon btn-float">
+                    <span class="material-icons-outlined">delete</span>
+                </button>
+            </div>
+            <div class="code-display">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-dark&wt=none&l=auto&width=680&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-icon%2520btn-float%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253Eadd%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-success%2520btn-icon%2520btn-float%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253Eedit%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-error%2520btn-icon%2520btn-float%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253Edelete%253C%252Fspan%253E%250A%253C%252Fbutton%253E"
+                    style="width: 100%; height: 242px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <hr>
+            <footer>
+                <a href="../Badge/badge.html" class="prev">
+                    <span class="material-icons-outlined">navigate_before</span>Badge
+                </a>
+                <a href="../Card/card.html" class="next">Card<span
+                        class="material-icons-outlined">navigate_next</span></a>
+            </footer>
+        </div>
+    </main>
+</body>
+
+</html>
