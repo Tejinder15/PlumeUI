@@ -1,9 +1,11 @@
+@import url("../../Styles/utility.css");
+
 /* Basic Card */
 .basic-card {
   max-width: 360px;
   background-color: white;
   box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.3);
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 
 .basic-card-primary {
@@ -16,7 +18,7 @@
 }
 
 .basic-card-primary-h3 {
-  color: #636e72;
+  color: var(--basic-card-primary-h3);
   font-weight: 400;
   font-size: 1rem;
   margin-top: -15px;
@@ -28,7 +30,7 @@
 }
 
 .basic-card-secondary p {
-  color: #8b9a9b;
+  color: var(--basic-card-secondary-p);
   font-size: 1rem;
 }
 
@@ -63,18 +65,18 @@
 
 .primary-action {
   font-weight: bold;
-  color: #4361ee;
+  color: var(--primary-action);
   padding: 0rem 0.6rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: "Poppins", sans-serif;
+  font-family: inherit;
 }
 
 .secondary-action {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  color: #636e72;
+  color: var(--secondary-action);
 }
 
 /* Text Over Media */
@@ -107,12 +109,10 @@
   max-width: 400px;
   background-color: white;
   box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.3);
-  font-family: "Poppins", sans-serif;
 }
 
 .horizontal-card-image-title {
   display: flex;
-  flex-direction: row;
 }
 
 .horizontal-image {
@@ -146,7 +146,7 @@
   width: 30px;
   height: 30px;
   position: absolute;
-  background-color: #4361ee;
+  background-color: var(--primary-action);
   border-radius: 50%;
   border: 2px solid white;
   right: -16px;
@@ -158,7 +158,7 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  color: white;
+  color: black;
   cursor: pointer;
 }
 
