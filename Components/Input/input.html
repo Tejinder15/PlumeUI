@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Styles/doc.css">
+    <link rel="stylesheet" href="./input.css">
+    <title>Input | Plume UI</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Plume UI</h1>
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+    <!-- Sidebar -->
+    <aside>
+        <nav>
+            <a href="../Usage/usage.html">Getting Started</a>
+            <a href="../Avatar/avatar.html">Avatar</a>
+            <a href="../Alert/alert.html">Alert</a>
+            <a href="../Badge/badge.html">Badge</a>
+            <a href="../Button/button.html">Button</a>
+            <a href="../Card/card.html">Card</a>
+            <a href="../Image/image.html">Image</a>
+            <a href="#" class="active">Input</a>
+            <a href="../List/list.html">List</a>
+            <a href="../Nav/nav.html">Navigation</a>
+            <a href="../Toast/toast.html">Toast</a>
+        </nav>
+    </aside>
+    <!-- Content -->
+    <main>
+        <div class="content">
+            <h2 class="content-title">Input</h2>
+            <p class="content-brief">
+                Inputs are used to take information from the user, and then save the data to the server, accordingly.
+            </p>
+            <hr>
+            <div class="content-usage">
+                <h3>Simple Input</h3>
+                <p>To add Simple Input Textbox.</p>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" required>
+                </div>
+                <div class="code-display">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-dark&wt=none&l=auto&width=680&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-group%2522%253E%250A%2509%253Clabel%2520for%253D%2522username%2522%253EUsername%253C%252Flabel%253E%250A%2509%253Cinput%2520type%253D%2522text%2522%2520name%253D%2522username%2522%2520required%253E%250A%253C%252Fdiv%253E"
+                        style="width: 100%; height: 149px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+            <hr>
+            <div class="content-feature">
+                <h3>Styled Input with Validation</h3>
+                <div class="content-feature-display">
+                    <p>To apply styling and basic validation to the input textbox.
+                    </p>
+                    <div class="input-group">
+                        <label for="password" class="err-label">Password</label>
+                        <input type="password" name="password" class="input-err" required autocomplete="off">
+                        <span class="err-msg">Wrong Password.Try again.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="code-display">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-dark&wt=none&l=auto&width=680&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-group%2522%253E%250A%2509%253Clabel%2520for%253D%2522password%2522%2520class%253D%2522err-label%2522%253EPassword%253C%252Flabel%253E%250A%2509%253Cinput%2520type%253D%2522password%2522%2520name%253D%2522password%2522%2520class%253D%2522input-err%2522%2520required%2520autocomplete%253D%2522off%2522%253E%250A%2509%253Cspan%2520class%253D%2522err-msg%2522%253EWrong%2520Password.Try%2520again.%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                    style="width: 100%; height: 167px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <hr>
+            <footer>
+                <a href="../Image/image.html" class="prev">
+                    <span class="material-icons-outlined">navigate_before</span>Image
+                </a>
+                <a href="../List/list.html" class="next">List <span
+                        class="material-icons-outlined">navigate_next</span></a>
+            </footer>
+        </div>
+    </main>
+</body>
+</html>
