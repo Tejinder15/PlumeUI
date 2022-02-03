@@ -1,0 +1,189 @@
+@import url("../../Styles/utility.css");
+
+/* Basic Card */
+.basic-card {
+  max-width: 360px;
+  background-color: white;
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.3);
+  /* font-family: "Poppins", sans-serif; */
+}
+
+.basic-card-primary {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.basic-card-primary-h2 {
+  color: black;
+}
+
+.basic-card-primary-h3 {
+  color: var(--basic-card-primary-h3);
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: -15px;
+}
+
+.basic-card-details {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.basic-card-secondary p {
+  color: var(--basic-card-secondary-p);
+  font-size: 1rem;
+}
+
+.basic-card-actions {
+  width: 92%;
+  margin: 0 auto;
+  padding-bottom: 0.7rem;
+  display: flex;
+  align-items: center;
+}
+
+.basic-card-actions-secondary {
+  margin-left: auto;
+  font-size: 1rem;
+}
+
+.primary-action,
+.secondary-action {
+  height: 2.5rem;
+  background-color: transparent;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.primary-action:hover,
+.secondary-action:hover {
+  background-color: #e6eaeb;
+}
+
+.primary-action {
+  font-weight: bold;
+  color: var(--primary-action);
+  padding: 0rem 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: inherit;
+}
+
+.secondary-action {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  color: var(--secondary-action);
+}
+
+/* Text Over Media */
+.basic-card-image {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.basic-card-image-title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-overlay-h3 {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: -20px;
+}
+
+.text-overlay {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+}
+
+/* Horizontal Card */
+.horizontal-card {
+  max-width: 400px;
+  background-color: white;
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+.horizontal-card-image-title {
+  display: flex;
+}
+
+.horizontal-image {
+  height: 120px;
+  max-width: 100%;
+}
+
+.horizontal-primary {
+  padding-left: 0.5rem;
+  align-self: center;
+}
+
+.horizontal-h2 {
+  font-size: 110%;
+}
+.horizontal-h3 {
+  font-size: 92%;
+}
+
+/* Shadow Card */
+.shadow {
+  box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* Badge Card */
+.badge-image-title {
+  position: relative;
+}
+
+.dot {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: var(--primary-action);
+  border-radius: 50%;
+  border: 2px solid white;
+  right: -16px;
+  top: -18px;
+}
+
+/* Dismiss Card */
+.dismiss {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: black;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media only screen and (max-width: 375px) {
+  .basic-card,
+  .horizontal-card,
+  .shadow {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .basic-card-actions {
+    width: 98%;
+  }
+
+  .primary-action {
+    font-size: 60%;
+  }
+
+  .horizontal-h2 {
+    font-size: 90%;
+  }
+
+  .horizontal-h3 {
+    font-size: 80%;
+  }
+}
