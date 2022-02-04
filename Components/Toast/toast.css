@@ -1,0 +1,48 @@
+@import url("../../Styles/utility.css");
+
+.toast-btn {
+  min-width: 100px;
+  padding: 0.7rem 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+#toast {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: var(--link-hover-color);
+  text-align: center;
+  border-radius: 2px;
+  padding: 1rem;
+  left: 50%;
+  position: fixed;
+  z-index: 3;
+  bottom: 30px;
+}
+
+#toast.show {
+  visibility: visible;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
