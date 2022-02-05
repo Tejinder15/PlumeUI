@@ -36,6 +36,12 @@ p {
   font-weight: bold;
 }
 
+hr {
+  height: 1.4px;
+  background-color: #ced4da;
+  border-width: 0;
+}
+
 /* Header */
 header {
   height: 62px;
