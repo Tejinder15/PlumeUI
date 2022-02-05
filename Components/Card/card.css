@@ -145,12 +145,12 @@
 .dot {
   width: 30px;
   height: 30px;
+  padding: 3px;
   position: absolute;
-  background-color: var(--primary-action);
+  background-color: white;
   border-radius: 50%;
-  border: 2px solid white;
-  right: -16px;
-  top: -18px;
+  right: 8px;
+  top: 8px;
 }
 
 /* Dismiss Card */

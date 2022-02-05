@@ -1,7 +1,14 @@
-@import url("../Avatar/avatar.css");
-
 .badge {
+  display: inline-block;
   position: relative;
+}
+
+.avatar {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  position: relative;
+  display: block;
 }
 
 .status {
@@ -10,8 +17,8 @@
   border-radius: 50%;
   border: 2px solid #fff;
   position: absolute;
-  bottom: 8%;
-  right: 8%;
+  bottom: 0;
+  right: 12px;
 }
 
 .online {
