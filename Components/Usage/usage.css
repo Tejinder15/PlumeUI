@@ -1,0 +1,10 @@
+@import url("../../Styles/utility.css");
+
+.highlight {
+  color: #7371fc;
+  font-weight: bold;
+}
+
+.next {
+  margin-left: auto;
+}
