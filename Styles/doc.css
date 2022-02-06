@@ -1,13 +1,8 @@
+@import url("./utility.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
-}
-
-:root {
-  --para-link-color: #6c757d;
-  --scroll-color: #ced4da;
-  --link-hover-color: #cfbaf0;
 }
 
 body {
@@ -129,6 +124,14 @@ main {
 
 .demo > div + div {
   margin-left: 15px;
+}
+
+/* Highlighted Component demo container */
+.feat-nav {
+  min-height: 100px;
+  background-color: var(--stack-li);
+  border: 1px solid var(--secondary-action);
+  padding: 1rem 0.5rem;
 }
 
 /* Footer */
