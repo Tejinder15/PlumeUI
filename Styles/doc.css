@@ -63,11 +63,13 @@ header {
 
 /* Sidebar */
 aside {
-  height: 100vh;
+  height: 90vh;
   width: 300px;
   position: fixed;
-  display: flex;
-  align-items: center;
+  padding: 1rem 0 0.6rem 0;
+}
+
+aside:hover {
   overflow-y: auto;
 }
 
@@ -81,12 +83,10 @@ aside::-webkit-scrollbar-thumb {
 }
 
 nav {
-  height: 90%;
   width: 65%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
 }
 
 nav a {
@@ -102,7 +102,7 @@ nav a:hover {
 
 /* Content */
 main {
-  margin-left: 300px;
+  margin-left: 320px;
 }
 
 .content {
