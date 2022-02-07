@@ -1,0 +1,21 @@
+@import url("../../Styles/utility.css");
+
+.grid {
+  display: grid;
+  column-gap: 10px;
+}
+
+.grid-column-2 {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.grid-col {
+  border: 1px solid black;
+  text-align: center;
+  padding: 1rem 0;
+  background-color: var(--link-hover-color);
+}
+
+.grid-column-3 {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
