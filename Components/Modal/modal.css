@@ -1,0 +1,47 @@
+@import url("../../Styles/utility.css");
+
+.modal-container {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 3;
+}
+
+.modal {
+  width: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid var(--para-link-color);
+}
+.show {
+  display: block;
+}
+.show-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#open-modal {
+  padding: 0.6rem 1rem;
+}
+
+#close-modal {
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--para-link-color);
+  border-radius: 2px;
+}
+
+#close-modal:hover {
+  background-color: var(--error-color);
+}
