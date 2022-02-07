@@ -6,5 +6,7 @@
 @import url("../Components/Image/image.css");
 @import url("../Components/Input/input.css");
 @import url("../Components/List/list.css");
+@import url("../Components/Modal/modal.css");
 @import url("../Components/Navigation/navigation.css");
+@import url("../Components/Text_Utilities/text_utility.css");
 @import url("../Components/Toast/toast.css");
