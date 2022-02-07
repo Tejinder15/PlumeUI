@@ -3,6 +3,7 @@
 
 :root {
   font-family: "Poppins", sans-serif;
+  --para-link-color: #6c757d;
   --basic-card-primary-h3: #636e72;
   --basic-card-secondary-p: #8b9a9b;
   --primary-action: #4361ee;
@@ -10,4 +11,5 @@
   --error-color: #e63946;
   --stack-li: #ecebeb;
   --link-hover-color: #cfbaf0;
+  --scroll-color: #ced4da;
 }

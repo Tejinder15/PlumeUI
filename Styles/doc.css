@@ -1,13 +1,8 @@
+@import url("./utility.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
-}
-
-:root {
-  --para-link-color: #6c757d;
-  --scroll-color: #ced4da;
-  --link-hover-color: #cfbaf0;
 }
 
 body {
@@ -68,11 +63,13 @@ header {
 
 /* Sidebar */
 aside {
-  height: 100vh;
+  height: 90vh;
   width: 300px;
   position: fixed;
-  display: flex;
-  align-items: center;
+  padding: 1rem 0 0.6rem 0;
+}
+
+aside:hover {
   overflow-y: auto;
 }
 
@@ -86,12 +83,10 @@ aside::-webkit-scrollbar-thumb {
 }
 
 nav {
-  height: 90%;
   width: 65%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
 }
 
 nav a {
@@ -107,7 +102,7 @@ nav a:hover {
 
 /* Content */
 main {
-  margin-left: 300px;
+  margin-left: 320px;
 }
 
 .content {
@@ -129,6 +124,14 @@ main {
 
 .demo > div + div {
   margin-left: 15px;
+}
+
+/* Highlighted Component demo container */
+.feat-nav {
+  min-height: 100px;
+  background-color: var(--stack-li);
+  border: 1px solid var(--secondary-action);
+  padding: 1rem 0.5rem;
 }
 
 /* Footer */
