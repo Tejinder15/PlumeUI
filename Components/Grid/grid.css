@@ -3,6 +3,7 @@
 .grid {
   display: grid;
   column-gap: 10px;
+  row-gap: 5px;
 }
 
 .grid-column-2 {
