@@ -1,0 +1,13 @@
+@import url("../../Styles/utility.css");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round");
+
+.read-only-rating {
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--rating-color);
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+}
