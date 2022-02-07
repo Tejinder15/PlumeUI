@@ -9,13 +9,6 @@ openModal.addEventListener("click", () => {
   body.style.overflowY = "hidden";
 });
 
-// document.addEventListener("click", (e) => {
-//     if (e.target.id === "close-modal") {
-//         modalContainer.classList.remove("show-container");
-//         body.style.overflowY = "visible";
-//   }
-// });
-
 closebtn.addEventListener("click",()=>{
     modalContainer.classList.remove("show-container");
     body.style.overflowY = "visible";
