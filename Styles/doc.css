@@ -52,9 +52,10 @@ header {
 
 .hamburger > div {
   width: 25px;
-  height: 2px;
+  height: 3px;
   background-color: #000;
   margin: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
 .hamburger {
@@ -62,40 +63,41 @@ header {
 }
 
 /* Sidebar */
-aside {
+.components-list {
   height: 90vh;
   width: 300px;
   position: fixed;
   padding: 1rem 0 0.6rem 0;
+  background-color: white;
 }
 
-aside:hover {
+.components-list:hover {
   overflow-y: auto;
 }
 
-aside::-webkit-scrollbar {
+.components-list::-webkit-scrollbar {
   width: 4px;
 }
 
-aside::-webkit-scrollbar-thumb {
+.components-list::-webkit-scrollbar-thumb {
   background-color: var(--scroll-color);
   border-radius: 10px;
 }
 
-nav {
+.components {
   width: 65%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
-nav a {
+.components a {
   border-radius: 3px;
   padding: 0.7rem 0.4rem;
   color: #585a5c;
 }
 
-nav a:hover {
+.components a:hover {
   background-color: var(--link-hover-color);
   color: white;
 }
@@ -152,7 +154,10 @@ footer a {
 /* Media query */
 @media screen and (max-width: 786px) {
   aside {
-    display: none;
+    z-index: 5;
+    transform: translateX(-100%);
+    overflow: auto;
+    transition: all 0.3s ease-in-out;
   }
 
   main {
@@ -163,4 +168,46 @@ footer a {
     width: 95%;
     margin: 0 auto;
   }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+.components-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFadeOut {
+  from {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-48deg) translate(-5px, 5px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(+48deg) translate(-6px, -6px);
 }
