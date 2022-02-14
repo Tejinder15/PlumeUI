@@ -43,10 +43,11 @@ main {
   text-shadow: 6px 6px black;
 }
 
-p {
+.hero-desc {
   font-size: 1.2rem;
   margin-top: -50px;
   color: var(--para-link);
+  max-width: 32rem;
 }
 
 .highlight {
@@ -88,4 +89,10 @@ p {
   color: white;
   background-color: var(--btn-color);
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 375px) {
+  .hero-head {
+    font-size: 3.5rem;
+  }
 }
