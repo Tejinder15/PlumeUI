@@ -16,6 +16,7 @@ a {
 
 h1 {
   font-weight: 700;
+  color: var(--highlight-color);
 }
 
 h3 {
@@ -96,11 +97,13 @@ header {
   border-radius: 3px;
   padding: 0.7rem 0.4rem;
   color: #585a5c;
+  transition: padding 0.3s ease-in-out;
 }
 
 .components a:hover {
-  background-color: var(--link-hover-color);
+  background-color: var(--highlight-color);
   color: white;
+  padding-left: 0.8rem;
 }
 
 /* Content */
