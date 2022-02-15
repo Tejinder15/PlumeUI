@@ -13,7 +13,7 @@ body {
   margin: 0;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  background-color: white;
+  background-color: #fbfaf5;
   transition: all 0.3s ease-in;
 }
 
@@ -29,14 +29,25 @@ main {
 }
 
 .logo {
-  font-size: 4.6rem;
-  font-weight: 700;
+  position: absolute;
+  top: 1.4rem;
+  left: 1.6rem;
+  width: 4rem;
+  max-width: 100%;
 }
 
-p {
+.hero-head {
+  color: var(--btn-color);
+  font-size: 4.6rem;
+  font-weight: 700;
+  text-shadow: 6px 6px black;
+}
+
+.hero-desc {
   font-size: 1.2rem;
   margin-top: -50px;
   color: var(--para-link);
+  max-width: 32rem;
 }
 
 .highlight {
@@ -57,7 +68,6 @@ p {
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
 .btn1 {
@@ -72,9 +82,17 @@ p {
 
 .btn1:hover {
   background-color: var(--btn1-hover);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
 .btn2:hover {
   color: white;
   background-color: var(--btn-color);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 375px) {
+  .hero-head {
+    font-size: 3.5rem;
+  }
 }
