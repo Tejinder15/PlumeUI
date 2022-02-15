@@ -48,6 +48,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 3;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 .hamburger > div {
@@ -134,6 +135,13 @@ main {
   background-color: var(--stack-li);
   border: 1px solid var(--secondary-action);
   padding: 1rem 0.5rem;
+}
+
+/* Button Container */
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 /* Footer */
